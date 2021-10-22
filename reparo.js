@@ -2,7 +2,7 @@ jQuery('head').append('<meta content="width=device-width, initial-scale=1" name=
 jQuery("<link/>", {
     rel: "stylesheet",
     type: "text/css",
-    href: "file:///Users/matt/Desktop/reparo.css"
+    href: "https://raw.githubusercontent.com/matthewcurney/form/main/reparo.css"
  }).appendTo("head");
  
 jQuery(document).ready(function () {
