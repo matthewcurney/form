@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 :root {
     --main-color: #3273dc;
-    --text-color: #14327d;
-    --bg-color: #f5f5f5;
+    --text-color: rgba(20,50,125,1);
     --border-color: rgba(20,50,125,.3);
 }
 
@@ -31,7 +30,7 @@ form {
 }
 
 label {
-    margin-top: .8rem;
+    margin: 0;
     display: inline-block;
     text-transform: capitalize;
     font-size: .8rem;
@@ -59,12 +58,20 @@ a:hover {
 }
 td {
     display: inline-block;
-    padding: 0 1rem 0 0;
+    font-size: 1rem;
+    font-weight: 700;
+    padding: 1rem .5rem;
 }
-
+.keep td {
+    display: table-cell;
+}
+.checkbox,
+.radio {
+    vertical-align: top;
+}
 h1 {
     padding: 0;
-    font-size: 2rem;
+    font-size: 1.6rem;
     line-height: 2rem;
     font-weight: 400;
     width: 100%;
@@ -82,7 +89,6 @@ h1 font {
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
 }
 
@@ -139,7 +145,7 @@ ul.tabbernav li:hover {
 }
 
 .tabberlive .tabbertab {
-    padding: 1rem 2rem 2rem 2rem;
+    padding: 0 2rem 4rem;
     border: none;
     border-top: 0;
 }
@@ -149,6 +155,7 @@ fieldset {
     border: none;
     margin: 0;
     padding: 0;
+    margin-top: 2rem;
 }
 
 fieldset legend {
@@ -165,11 +172,6 @@ select {
     padding: .5rem .75rem;
 }
 
-td {
-    font-size: 1rem;
-    font-weight: 700;
-    margin-bottom: .5rem;
-}
 
 input, textarea {
     box-shadow: inset 0 0.3rem .6rem -.6rem var(--border-color);
@@ -181,7 +183,16 @@ input, textarea {
     line-height: 1;
     padding: .5rem .75rem;
     display: block;
+    height: auto!important;
+    width: auto!important;
 }
+input[type="checkbox"] {
+    display: inline-block;
+}
+input[type="radio"] {
+
+}
+
 
 @media screen and (max-width: 768px) {
     td {
